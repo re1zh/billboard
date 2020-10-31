@@ -1,0 +1,353 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	.header{
+		background: #b2bec3;
+		height: 100px;
+	}
+	.header-center{
+		height: 90px;
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+	}
+	.box-logo{
+		background: #b2bec3;
+		height: 90px;
+		width: 200px;
+	}
+	.box-links{
+		height: 90px;
+		width: 650px;
+		padding-top: 50px;
+	}
+	.box-buttons{
+		height: 90px;
+		width: 150px;
+	}
+	.charts-container{
+		height: 1200px;
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.charts-sort{
+		height: 70px;
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+	}
+	.charts-up{
+		background: lightgreen;
+		height: 150px;
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	.charts-new{
+		background: #ffeaa7;
+		height: 150px;
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	.charts-down{
+		background: pink;
+		height: 150px;
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	.charts-rank{
+		height: 150px;
+		width: 120px;
+	}
+	.charts-info{
+		height: 150px;
+		width: 550px;
+	}
+	.charts-button{
+		height: 150px;
+		width: 180px;
+	}
+	.charts-img{
+		height: 150px;
+		width: 150px;
+	}
+	.links{
+		padding-left: 50px;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.btn-purple{
+		background: purple;
+		width: 100px;
+		height: 30px;
+		color: white;
+		font-family: Arial;
+		border: none;
+		border-radius: 5px;
+	}
+	.btn-green{
+		background: #44bd32;
+		width: 100px;
+		height: 30px;
+		color: white;
+		font-family: Arial;
+		border: none;
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+	.btn-blue{
+		background: blue;
+		width: 120px;
+		height: 30px;
+		color: white;
+		font-family: Arial;
+		border: none;
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+	.rank-text-up{
+		color: green;
+		font-family: Arial;
+		text-align: center;
+		font-weight: bold;
+
+	}
+	.rank-text-new{
+		color: orange;
+		font-family: Arial;
+		text-align: center;
+		font-weight: bold;
+	}
+	.rank-text-down{
+		color: red;
+		font-family: Arial;
+		text-align: center;
+		font-weight: bold;
+	}
+	.rank{
+		font-family: Arial;
+		text-align: center;
+		font-weight: bold
+	}
+	.name{
+		font-family: Arial; 
+		font-weight: bold;
+		color: #30336b;
+	}
+	.author{
+		font-family: Arial; 
+		font-weight: bold;
+		color: #718093;
+	}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.svg" style="width: 200px; height: 90px">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a href="" class="links" style="color: white">CHARTS</a>
+			<a href="" class="links" style="color: white">NEWS</a>
+			<a href="" class="links" style="color: red">VIDEO</a>
+			<a href="" class="links" style="color: orange">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="btn-purple" style="margin-left: 50px; margin-top: 50px">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-container">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button style="background: orange; width: 100px; height: 30px; color: white; font-family: Arial; border: none;border-radius: 5px; margin-top: 27px">THIS WEEK</button>
+		<button style="background: red; width: 100px; height: 30px; color: white; font-family: Arial; border: none;border-radius: 5px; margin-left: 10px; margin-top: 27px">LAST WEEK</button>
+		<button class="btn-green" style="margin-left: 10px; margin-top: 27px">PEAK</button>	
+		<button class="btn-purple" style="margin-left: 10px; margin-top: 27px">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">1</h1>
+			<p class="rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">Inferno</h2>
+			<h3 class="author">Mrs. Green Apple</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="inferno.jpg" style="width: 150px">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">2</h1>
+			<p class="rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">I'm Still Standing</h2>
+			<h3 class="author">Elton John</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="stand.jpg" style="width: 150px">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">3</h1>
+			<p class="rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">Кто все эти люди?</h2>
+			<h3 class="author">Порнофильмы</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="who.jpg" style="width: 150px">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">4</h1>
+			<p class="rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">Feel Good Inc.</h2>
+			<h3 class="author">Gorillaz</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="fginc.jpg" style="width: 150px">
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">5</h1>
+			<p class="rank-text-down">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">My Way</h2>
+			<h3 class="author">Frank Sinatra</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="myway.jpg" style="width: 150px">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">6</h1>
+			<p class="rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">bedroom community</h2>
+			<h3 class="author">glass beach</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="bc.jpg" style="width: 150px">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="rank">7</h1>
+			<p class="rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="name">Somebody To Love</h2>
+			<h3 class="author">Queen</h3>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="smbtolove.jpg" style="width: 150px">
+		</div>		
+	</div>
+</div>
+<!--  -->
